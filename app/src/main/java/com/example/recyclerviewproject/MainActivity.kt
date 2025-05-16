@@ -25,6 +25,62 @@ class MainActivity : AppCompatActivity() {
             Fruit(
                 "Laranja",
                 "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+            ),
+            Fruit(
+                "Morango",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+            ),
+            Fruit(
+                "Banana",
+                "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+            ),
+            Fruit("Maçã", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"),
+            Fruit(
+                "Laranja",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+            ),
+            Fruit(
+                "Morango",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+            ),
+            Fruit(
+                "Banana",
+                "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+            ),
+            Fruit("Maçã", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"),
+            Fruit(
+                "Laranja",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+            ),
+            Fruit(
+                "Morango",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+            ),
+            Fruit(
+                "Banana",
+                "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+            ),
+            Fruit("Maçã", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"),
+            Fruit(
+                "Laranja",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+            ),
+            Fruit(
+                "Morango",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+            ),
+            Fruit(
+                "Banana",
+                "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+            ),
+            Fruit("Maçã", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"),
+            Fruit(
+                "Laranja",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+            ),
+            Fruit(
+                "Morango",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
             )
         )
 

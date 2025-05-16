@@ -9,6 +9,7 @@ import com.example.recyclerviewproject.model.Fruit
 class FruitViewHolder(private val binding: ItemFruitBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(item: Fruit) {
         binding.tvName.text = item.name
+
         Glide.with(binding.ivIcon.context)
             .load(item.imageUrl)
             .placeholder(R.drawable.ic_ball)
