@@ -4,9 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.example.recyclerviewproject.databinding.ItemFruitBinding
+import com.example.recyclerviewproject.model.DogResponse
 import com.example.recyclerviewproject.model.Fruit
 
-class FruitAdapter : ListAdapter<Fruit, FruitViewHolder>(FruitDiffCallback()) {
+class FruitAdapter : ListAdapter<DogResponse, FruitViewHolder>(FruitDiffCallback()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FruitViewHolder {
         val binding = ItemFruitBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return FruitViewHolder(binding)
