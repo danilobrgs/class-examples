@@ -1,4 +1,4 @@
-package com.example.recyclerviewproject.model
+package com.example.recyclerviewproject.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -3,11 +3,10 @@ package com.example.recyclerviewproject.adapterAux
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recyclerviewproject.R
-import com.example.recyclerviewproject.databinding.ItemFruitBinding
-import com.example.recyclerviewproject.model.DogResponse
-import com.example.recyclerviewproject.model.Fruit
+import com.example.recyclerviewproject.data.model.DogResponse
+import com.example.recyclerviewproject.databinding.ItemDogBinding
 
-class FruitViewHolder(private val binding: ItemFruitBinding) : RecyclerView.ViewHolder(binding.root) {
+class DogViewHolder(private val binding: ItemDogBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(item: DogResponse) {
         binding.tvName.text = item.imageUrl
         binding.tvPrice.text = "00"

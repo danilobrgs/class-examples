@@ -1,6 +1,6 @@
-package com.example.recyclerviewproject
+package com.example.recyclerviewproject.data.remote
 
-import com.example.recyclerviewproject.model.DogResponse
+import com.example.recyclerviewproject.data.model.DogResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

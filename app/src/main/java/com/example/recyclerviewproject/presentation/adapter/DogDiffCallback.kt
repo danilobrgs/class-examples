@@ -1,10 +1,9 @@
 package com.example.recyclerviewproject.adapterAux
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.recyclerviewproject.model.DogResponse
-import com.example.recyclerviewproject.model.Fruit
+import com.example.recyclerviewproject.data.model.DogResponse
 
-class FruitDiffCallback : DiffUtil.ItemCallback<DogResponse>() {
+class DogDiffCallback : DiffUtil.ItemCallback<DogResponse>() {
     override fun areItemsTheSame(oldItem: DogResponse, newItem: DogResponse): Boolean =
         oldItem.imageUrl == newItem.imageUrl
 
