@@ -9,9 +9,9 @@ val json = Json { ignoreUnknownKeys = true }
 
 object RetrofitClient {
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://dog.ceo/api/")
+        .baseUrl("https://parallelum.com.br/fipe/api/v1/")
         .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
         .build()
 
-    val service: DogService = retrofit.create(DogService::class.java)
+    val service: FipeService = retrofit.create(FipeService::class.java)
 }

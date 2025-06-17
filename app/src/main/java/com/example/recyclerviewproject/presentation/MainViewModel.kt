@@ -4,29 +4,34 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.recyclerviewproject.data.DogRepository
-import com.example.recyclerviewproject.data.model.DogResponse
+import com.example.recyclerviewproject.data.FipeRepository
+import com.example.recyclerviewproject.data.model.BrandResponse
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class DogViewModel(
-    private val repository: DogRepository
+    private val repository: FipeRepository
 ) : ViewModel() {
 
-    private val _dogList = MutableLiveData<List<DogResponse>>(emptyList())
-    val dogList: LiveData<List<DogResponse>> get() = _dogList
+    private val _brands = MutableLiveData<List<BrandResponse>>(emptyList())
+    val brands: LiveData<List<BrandResponse>> get() = _brands
+    private val _errorState = MutableLiveData<String>()
+    val errorState: LiveData<String> get() = _errorState
+    private val _loadingState = MutableLiveData<Boolean>()
+    val loadingState: LiveData<Boolean> get() = _loadingState
 
-    fun fetchRandomDog() {
-        viewModelScope.launch {
+    fun fetchBrands() {
+        _loadingState.postValue(true)
+        viewModelScope.launch(Dispatchers.IO) {
             try {
-                val dog = repository.getRandomDog()
-                dog?.let {
-                    val updatedList = _dogList.value.orEmpty().toMutableList()
-                    updatedList.add(it)
-                    _dogList.value = updatedList
+                val brands = repository.getBrands()
+                brands?.let {
+                    _brands.postValue(it)
                 }
             } catch (e: Exception) {
-                // log error
+                _errorState.postValue(e.message)
             }
+            _loadingState.postValue(false)
         }
     }
 }
