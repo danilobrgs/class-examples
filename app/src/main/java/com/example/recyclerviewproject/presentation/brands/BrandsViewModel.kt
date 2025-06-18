@@ -1,4 +1,4 @@
-package com.example.recyclerviewproject.presentation
+package com.example.recyclerviewproject.presentation.brands
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,7 +9,7 @@ import com.example.recyclerviewproject.data.model.BrandResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class DogViewModel(
+class BrandsViewModel(
     private val repository: FipeRepository
 ) : ViewModel() {
 
